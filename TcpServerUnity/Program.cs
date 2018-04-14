@@ -67,8 +67,8 @@ class MyTcpListener
                     Console.WriteLine("Received: {0}", data);
 
                     // Process the data sent by the client.
-                    data = data.ToUpper();
-                    data = "Frame: " + data;
+                    //data = data.ToUpper();
+                    //data = "Frame: " + data;
                     byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
 
                     // Send back a response.
